@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="Global_Variables" Id="{53c39996-212f-4a58-90ea-ed835b409578}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL
+(***********************IO-LINK  INPUT************************************)
+(**IO-Link1 AL1332**)
+	i1X01_HoistDoors_Closed AT %I*:USINT;
+	i1X02_HoistLiftDown_Slowdown AT %I*:USINT;
+	i1X03_HoistLift_Down AT %I*:USINT;
+	i1X04_Hoist_Discharge_Jam AT %I*:USINT;
+	i1X05_Infeed1_Pallet AT %I*:USINT;
+	i1X06_Infeed2_Pallet  AT %I*:USINT;
+	i1X07_Pallet_in_Hoist AT %I*:USINT;
+	i1X08_1114 AT %I*:USINT;
+
+(**IO-Link2 AL1332**)
+	i2X01 AT %I*:USINT;
+	i2X02_HoistLift_Up AT %I*:USINT;
+	i2X03_HoistLift_LastTier  AT %I*:USINT;
+	i2X04_Top_Frame_Monitor AT %I*:USINT;
+	i2X05_DunnageBin_Full AT %I*:USINT;
+	i2X06_TableTop_Accumulation  AT %I*:USINT;
+	i2X07_SingleFiler_Accumulation  AT %I*:USINT;
+	i2X08_CanTrack_Accumulation  AT %I*:USINT;
+
+(**IO-Link3 AL1332**)
+	i3X01_SweepGateDoor_Open AT %I*:USINT;
+	i3X02_CarriageRetract_Slowdown AT %I*:USINT;
+	i3X03_Carriage_Retracted AT %I*:USINT;
+	i3X04_Carriage_Extended AT %I*:USINT;
+	i3X05_CarriageExtend_Slowdown AT %I*:USINT;
+	i3X06_Layer_Capture_Monitor AT %I*:USINT;
+	i3X07_Vacuum_On AT %I*:USINT;
+	i3X08_ AT %I*:USINT;
+
+(**IO-Link4 AL1332**)
+	i4X01_Trolley_at_Hoist AT %I*:USINT;
+	i4X02_Trolley_at_Hoist_Slowdown AT %I*:USINT;
+	i4X03_Trolley_at_TierSheet_Bin_Slowdown AT %I*:USINT;
+	i4X04_Trolley_at_TierSheetBin AT %I*:USINT;
+	i4X05_Trolley_at_TopframeBin_Slowdown AT %I*:USINT;
+	i4X06_Trolley_at_TopframeBin AT %I*:USINT;
+	i4X07_TierSheetBin_Full AT %I*:USINT;
+	i4X08_TopframeBin_Full AT %I*:USINT;
+
+(**IO-Link5 AL1332**)
+	i5X01_TierSheet_Vacuum_Monitor AT %I*:USINT;
+	i5X02_TierSheet_Remover_Down AT %I*:USINT;
+	i5X03_TiersheetRemoverUp AT %I*:USINT;
+	i5X04_ AT %I*:USINT;
+	i5X05_Topframe_Remover_Up AT %I*:USINT;
+	i5X06_Topframe_On_BoardA AT %I*:USINT;
+	i5X07_Topframe_On_BoardB AT %I*:USINT;
+	i5X08_ AT %I*:USINT;
+
+(**Slot 2 KL-1114*)(*VAC Disconnect*)
+	iTable_Top_VAC AT %I*:BOOL;
+	iChain_Hoist_VAC AT %I*:BOOL;
+	iCarriage_VAC AT %I*:BOOL;
+	iChamber_Chain_VAC AT %I*:BOOL;
+
+(**Slot 3 KL1114*)(*VAC Disconnect*)
+	iPallet_Discharge_VAC AT %I*:BOOL;
+	iPallet_Infeed1_VAC AT %I*:BOOL;
+	iPallet_Infeed2_VAC AT %I*:BOOL;
+	iTierSheet_Car_VAC AT %I*:BOOL;
+
+(**Slot 4 KL1114*)(*VAC Disconnect*)
+	iDischarge1_VAC AT %I*:BOOL;
+	iDischarge2_VAC AT %I*:BOOL;
+	iDischarge3_VAC AT %I*:BOOL;
+	iProductHeight_SweepPos AT %I*:BOOL;
+	
+(**Slot 5 KL1114*)(*VFD ENABLE*)
+	iTable_Top_Vfd AT %I*:BOOL;
+	iChain_Hoist_Vfd AT %I*:BOOL;
+	iCarriage_Vfd AT %I*:BOOL;
+	iChamber_Chain_Vfd AT %I*:BOOL;
+
+(**Slot 6 KL1114*)(*VFD ENABLE*)
+	iPallet_Discharge_Vfd AT %I*:BOOL;
+	iPallet_Infeed1_Vfd AT %I*:BOOL;
+	iPallet_Infeed2_Vfd AT %I*:BOOL;
+	iTierSheet_Car_Vfd AT %I*:BOOL;
+
+(**Slot 7 KL1114*)(*VFD ENABLE*)
+	iDischarge1_Vfd AT %I*:BOOL;
+	iDischarge2_Vfd AT %I*:BOOL;
+	iDischarge3_Vfd AT %I*:BOOL;
+	i453 AT %I*:BOOL;
+
+(** Slot 8 KL-9260*)
+	iDM2_EmergencyStop AT %I*:BOOL;
+	iDM2_Fuse AT %I*:BOOL;
+(**Slot 9 KL-2602*)
+	oSweepGate_Open AT %Q*:BOOL;
+	oSweepGate_Close AT %Q*:BOOL;
+
+(**Slot 10 KL-2602*)
+	oTiersheetRemover_Up AT %Q*:BOOL;
+	oTiersheetRemover_Down AT %Q*:BOOL;
+
+(**Slot 11 KL-2602*)
+	oVacuum_Solenoid AT %Q*:BOOL;
+	oTopFrame_Seize AT %Q*:BOOL;
+
+(**Slot 12 KL-2602*)
+	oHoist_Shrouds_Close AT %Q*:BOOL;
+	oHoist_Shrouds_Open AT %Q*:BOOL;
+
+(**Slot 13 KL-2602*)
+	oHoistDoors_Open AT %Q*:BOOL;
+	oHoistDoors_Close AT %Q*:BOOL;
+
+(**Slot 14 KL-2602*)
+	oLayer_Capture AT %Q*:BOOL;
+	oLayer_Release AT %Q*:BOOL;
+(**Slot 15 KL-2602*)
+	oSweepgate_Engage AT %Q*:BOOL;
+	oSweepgate_Release AT %Q*:BOOL;
+
+(**Slot 16 KL-2602*)
+	oTierSheetGripper_Engage AT %Q*:BOOL;
+	oTierSheetGripper_Release AT %Q*:BOOL;
+
+(**Slot 17 KL-2602*)
+	oTierSheet_Bin_Open AT %Q*:BOOL;
+	oTierSheet_Bin_Close AT %Q*:BOOL;
+
+(**Slot 18 KL-2602*)
+	oTopFrame_Bin_Open AT %Q*:BOOL;
+	oTopFrame_Bin_Close AT %Q*:BOOL;
+
+(**Slot 19 KL-2602*)
+	oTopFrame_Remover_Lock AT %Q*:BOOL;
+	oTopFrame_Remover_Unlock AT %Q*:BOOL;
+
+(**Slot 20 KL-2602*)
+	oTopFrame_Remover_Clamps_Engage AT %Q*:BOOL;
+	oTopFrame_Remover_Clamps_Release AT %Q*:BOOL;
+
+(**Slot 21 KL-2602*)
+	oVacuum_Engage AT %Q*:BOOL;
+	oCarriage_Slow AT %Q*:BOOL;
+
+(**Slot 22 KL-2612*)
+	oIndicator_Green AT %Q*:BOOL;
+	oIndicator_Yellow AT %Q*:BOOL;
+
+(*Slot 23 KL-2612*)
+	oIndicator_Red AT %Q*:BOOL;
+	oTableTop_Run AT %Q*:BOOL;
+
+(*Slot 24 KL-2612*)
+	oChainHoist_Up AT %Q*:BOOL;
+	oChainHoist_Down AT %Q*:BOOL;
+
+(*Slot 25 KL-2612*)
+	oCarriage_Forward AT %Q*:BOOL;
+	oCarriage_Reverse AT %Q*:BOOL;
+
+(*Slot 26 KL-2612*)
+	oElevator_Infeed AT %Q*:BOOL;
+	oPalletDischarge_Run AT %Q*:BOOL;
+
+(*Slot 27 KL-2612*)
+	oPalletInfeed1_Run AT %Q*:BOOL;
+	oPalletInfeed2_Run AT %Q*:BOOL;
+(*Slot 28 KL-2612*)
+	oTierSheet_Car_Brake AT %Q*:BOOL;
+	oDischarge1_Run AT %Q*:BOOL;
+
+(*Slot 29 KL-2612*)
+	oDischarge2_Run AT %Q*:BOOL;
+	oInfeed1Rev AT %Q*:BOOL;
+
+(*Slot 30 KL-2612*)
+	oBrake_Hoist AT %Q*:BOOL;
+	oBrake_Carriage AT %Q*:BOOL;
+
+(*Slot 31 KL-2612*)
+	oTierSheet_Car_Fwd AT %Q*:BOOL;
+	oTierSheet_Car_Rev AT %Q*:BOOL;
+
+(*Slot 32 KL-2612*)
+	oChainHoist_Up_Slow AT %Q*:BOOL;
+	oChainberChainRev AT %Q*:BOOL;
+
+(*Slot 33 KL-2612*)
+	oInfeed2Rev AT %Q*:BOOL;
+	oTrolleySlowdown AT %Q*:BOOL;
+
+(***********IOLink Int to Bool*********)
+
+
+	Infeed2_Pallet: BOOL;
+	Infeed1_Pallet: BOOL;
+
+	Pallet_in_Hoist: BOOL;
+	Hoist_Discharge_Jam: BOOL;
+
+	HoistDoors_Closed: BOOL;
+
+	CanTrack_Accumulation: BOOL;
+	SingleFiler_Accumulation: BOOL;
+	TableTop_Accumulation: BOOL;
+
+	DunnageBin_Full: BOOL;
+	Top_Frame_Monitor: BOOL;
+	HoistLift_LastTier: BOOL;
+	HoistLiftDown_Slowdown: BOOL;
+
+	HoistLift_Up: BOOL;
+	HoistLift_Down: BOOL;
+
+	SweepGateDoor_Open: BOOL;
+
+	CarriageRetract_Slowdown: BOOL;
+	Carriage_Retracted: BOOL;
+	Carriage_Extended: BOOL;
+	CarriageExtend_Slowdown: BOOL;
+
+
+	Vacuum_On: BOOL;
+
+	Trolley_at_Hoist: BOOL;
+	Trolley_at_Hoist_Slowdown: BOOL;
+
+	Trolley_at_TierSheet_Bin_Slowdown: BOOL;
+	Trolley_at_TierSheetBin: BOOL;
+
+	Trolley_at_TopframeBin_Slowdown: BOOL;
+	Trolley_at_TopframeBin: BOOL;
+
+	TierSheetBin_Full: BOOL;
+	TopframeBin_Full: BOOL;
+
+	TierSheet_Vacuum_Monitor: BOOL;
+
+	TierSheet_Trolley_at_Hoist_Slowdown: BOOL;
+	TierSheet_Trolley_at_TierSheet_Bin_Slowdown: BOOL;
+
+	Topframe_Remover_Up: BOOL;
+	Topframe_On_BoardA: BOOL;
+	Topframe_On_BoardB: BOOL;
+
+
+
+
+
+
+
+
+
+
+
+
+	M2CanCounter: CTU;
+	LINC: BOOL;
+	sc_Depal2Count: INT;
+	sc_Depal2_1stShift: BOOL;
+	sc_Depal2_1stShiftStart: BOOL;
+	sc_M1CC1stReset: BOOL;
+	_1stshiftcnt: CTU;
+	jsjs: CTU;
+	sc_Depal2_2NDShiftStart: BOOL;
+	Pallet_Counter: CTU;
+	HoistDoorsOpen: BOOL;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

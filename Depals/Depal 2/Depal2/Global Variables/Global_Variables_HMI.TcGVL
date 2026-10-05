@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="Global_Variables_HMI" Id="{33d1523f-8782-40e5-afd0-756fe7114fae}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL
+	sEmergencyStop:BOOL;
+	EmergencyStop_Latch:BOOL;
+	sEstop_Reset:BOOL;
+	sMessages: STRING;
+	CC2_Count: REAL;
+	CC2_Reset:BOOL;
+	sManual: BOOL;
+	sManualLt: BOOL;
+	sElevator_Infeed: BOOL;
+	sHoist_UP: BOOL;
+	sHoist_DN: BOOL;
+	sCar_Fwd: BOOL;
+	sCar_Rev: BOOL;
+	sGateOpen: BOOL;
+	sTableTop: BOOL;
+	sDischarge1: BOOL;
+	sDischarge2: BOOL;
+	sDischarge3: BOOL;
+	sTrCar_Fwd: BOOL;
+	sTrCar_Rev: BOOL;
+	Auto: BOOL;
+	sAuto: BOOL;
+	sAutoLt:BOOL;
+	Manual: BOOL;
+	sManualLoading: BOOL;
+	Manual_Loading: BOOL;
+	sAutoLoading: BOOL;
+	sManualLoadingLt: BOOL;
+	sAutoLoadingLt: BOOL;
+	Auto_Loading: BOOL;
+	sReset: BOOL;
+	sInfeed1Rev: BOOL;
+	sInfeed2Rev: BOOL;
+	sElevator_Conv_Rev: BOOL;
+	sInfeed2: BOOL;
+	sInfeed1: BOOL;
+	sNew_PalletLt: BOOL;
+	Stop_For_Frame_Remove: BOOL;
+	sStop_For_Frame_RemoveLt: BOOL;
+	sc_Depal2_1stshiftcount: INT;
+	sc_Depal2_2NDshiftcount: INT;
+	sStopHoist: BOOL;
+	StopHoistLt: BOOL;
+	TrolleyEnable: BOOL;
+	Remover_Oneshot: TP;
+	TierSheet_Remover_Down:BOOL;
+	sTopFrame_RemovalLt: BOOL;
+	sTopFrame_Removal: BOOL;
+	sTrolleyAuto: BOOL;
+	sTrolleyAutoLt: BOOL;
+
+	sTrolleytoFrameBin: BOOL;
+	sTrolleytoHoist: BOOL;
+	sTrolleytoSheetBin: BOOL;
+	sTierSheetRemover_UpLT: BOOL;
+
+	Transfer_Can_to_Table: BOOL;
+	Carriage_to_Table: BOOL;
+	sTop_Frame_Removed: BOOL;
+	sTableTopLt: BOOL;
+	sDisch1Lt: BOOL;
+	sDisch2Lt: BOOL;
+	sDisch1FullLt: BOOL;
+	sDisch2FullLt: BOOL;
+	sDischargeTT_FullLt: BOOL;
+
+	sFrameClamps: BOOL;
+	sVac: BOOL;
+	sTiersheetRemover_Down: BOOL;
+	SheetRemoverToggle: TOGGLE;
+	sTiersheetRemover_Up: BOOL;
+	sHoistLT: BOOL;
+	sToHoistLT: BOOL;
+	sSheetBinLT: BOOL;
+	sToSheetBinLT: BOOL;
+	sToFrameBinLT: BOOL;
+	sFrameBinLT: BOOL;
+	sFrame_Remover: BOOL;
+
+	s1: BOOL;
+	s2: BOOL;
+	s3: BOOL;
+	s4: BOOL;
+	s5: BOOL;
+	s6: BOOL;
+	s7: BOOL;
+	s8: BOOL;
+	s9: BOOL;
+	s10: BOOL;
+	s11: BOOL;
+	s12: BOOL;
+	s13: BOOL;
+	s14: BOOL;
+	s15: BOOL;
+	s16: BOOL;
+	s17: BOOL;
+	s18: BOOL;
+	s19: BOOL;
+	s20: BOOL;
+
+	s21: BOOL;
+	s22: BOOL;
+
+	s23: BOOL;
+	s24: BOOL;
+
+	s25: BOOL;
+	s26: BOOL;
+
+	s27: BOOL;
+	s28: BOOL;
+
+	s29: BOOL;
+	s30: BOOL;
+
+	s31: BOOL;
+	s32: BOOL;
+
+
+	sMsg1: STRING;
+	sMsg2: STRING;
+	sMsg3: STRING;
+	sMsg4: STRING;
+	sMsg5: STRING;
+	sMsg6: STRING;
+	sMsg7: STRING;
+	sMsg8: STRING;
+	sMsg9: STRING;
+	sMsg10: STRING;
+	sMsg11: STRING;
+	sMsg12: STRING;
+	sMsg13: STRING;
+	sMsg14: STRING;
+	sMsg15: STRING;
+	sMsg16: STRING;
+	sMsg17: STRING;
+	sMsg18: STRING;
+	sMsg19: STRING;
+	sMsg20: STRING;
+	scM2CanReset: BOOL;
+	scM2CanCount: REAL;
+	scDepal_2_CanCountReset: BOOL;
+	scDepal_2_CanCount: REAL;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

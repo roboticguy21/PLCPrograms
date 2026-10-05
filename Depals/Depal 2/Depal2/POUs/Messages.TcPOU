@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Messages" Id="{4986c3eb-32c8-45f8-942f-4b1897b9fd51}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Messages
+VAR
+
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[sMessages:='System Ok';
+
+
+IF EmergencyStop_Latch THEN
+	sMessages:='EMERGENCY  STOP!';
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="Messages">
+      <LineId Id="4" Count="5" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

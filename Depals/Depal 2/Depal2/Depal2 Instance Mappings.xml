@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<VarLinks>
+	<OwnerA Name="InputDst" Prefix="TIPC^Depal2^Depal2 Instance" Type="1">
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Box 4 (BK1250)">
+			<Link VarA=".i453" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 7 (KL1114)^Channel 4^Input" Size="1"/>
+			<Link VarA=".iCarriage_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 2 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iCarriage_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 5 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iChain_Hoist_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 2 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iChain_Hoist_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 5 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iChamber_Chain_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 2 (KL1114)^Channel 4^Input" Size="1"/>
+			<Link VarA=".iChamber_Chain_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 5 (KL1114)^Channel 4^Input" Size="1"/>
+			<Link VarA=".iDM2_EmergencyStop" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 8 (KL9260)^Channel 1^Power" Size="1"/>
+			<Link VarA=".iDM2_Fuse" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 8 (KL9260)^Channel 1^ShortCircuit" Size="1"/>
+			<Link VarA=".iDischarge1_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 4 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iDischarge1_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 7 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iDischarge2_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 4 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iDischarge2_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 7 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iDischarge3_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 4 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iDischarge3_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 7 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iPallet_Discharge_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 3 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iPallet_Discharge_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 6 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iPallet_Infeed1_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 3 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iPallet_Infeed1_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 6 (KL1114)^Channel 2^Input" Size="1"/>
+			<Link VarA=".iPallet_Infeed2_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 3 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iPallet_Infeed2_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 6 (KL1114)^Channel 3^Input" Size="1"/>
+			<Link VarA=".iProductHeight_SweepPos" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 4 (KL1114)^Channel 4^Input" Size="1"/>
+			<Link VarA=".iTable_Top_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 2 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iTable_Top_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 5 (KL1114)^Channel 1^Input" Size="1"/>
+			<Link VarA=".iTierSheet_Car_VAC" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 3 (KL1114)^Channel 4^Input" Size="1"/>
+			<Link VarA=".iTierSheet_Car_Vfd" GrpA="Standard Inputs" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 6 (KL1114)^Channel 4^Input" Size="1"/>
+		</OwnerB>
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Term 2 (EK1122)^IO-Link1 (ifm IO-Link Master AL1332)">
+			<Link VarA=".i1X01_HoistDoors_Closed" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 1 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X02_HoistLiftDown_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 2 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X03_HoistLift_Down" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 3 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X04_Hoist_Discharge_Jam" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 4 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X05_Infeed1_Pallet" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 5 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X06_Infeed2_Pallet" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 6 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X07_Pallet_in_Hoist" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 7 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i1X08_1114" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 8 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+		</OwnerB>
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Term 2 (EK1122)^IO-Link2 (ifm IO-Link Master AL1332)">
+			<Link VarA=".i2X01" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 1 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X02_HoistLift_Up" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 2 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X03_HoistLift_LastTier" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 3 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X04_Top_Frame_Monitor" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 4 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X05_DunnageBin_Full" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 5 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X06_TableTop_Accumulation" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 6 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X07_SingleFiler_Accumulation" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 7 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i2X08_CanTrack_Accumulation" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 8 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+		</OwnerB>
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Term 2 (EK1122)^IO-Link3 (ifm IO-Link Master AL1332)">
+			<Link VarA=".i3X01_SweepGateDoor_Open" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 1 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X02_CarriageRetract_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 2 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X03_Carriage_Retracted" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 3 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X04_Carriage_Extended" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 4 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X05_CarriageExtend_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 5 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X06_Layer_Capture_Monitor" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 6 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X07_Vacuum_On" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 7 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i3X08_" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 8 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+		</OwnerB>
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Term 2 (EK1122)^IO-Link4 (ifm IO-Link Master AL1332)">
+			<Link VarA=".i4X01_Trolley_at_Hoist" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 1 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X02_Trolley_at_Hoist_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 2 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X03_Trolley_at_TierSheet_Bin_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 3 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X04_Trolley_at_TierSheetBin" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 4 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X05_Trolley_at_TopframeBin_Slowdown" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 5 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X06_Trolley_at_TopframeBin" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 6 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X07_TierSheetBin_Full" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 7 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i4X08_TopframeBin_Full" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 8 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+		</OwnerB>
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Term 2 (EK1122)^IO-Link5 (ifm IO-Link Master AL1332)">
+			<Link VarA=".i5X01_TierSheet_Vacuum_Monitor" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 1 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X02_TierSheet_Remover_Down" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 2 (Digital_IN)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X03_TiersheetRemoverUp" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 3 (Digital_IN)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X04_" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 4 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X05_Topframe_Remover_Up" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 5 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X06_Topframe_On_BoardA" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 6 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X07_Topframe_On_BoardB" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 7 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+			<Link VarA=".i5X08_" GrpA="Standard Inputs" TypeA="USINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000002}" VarB="Module 8 (IOL_In_8Byte)^TxPDO^input byte 0"/>
+		</OwnerB>
+	</OwnerA>
+	<OwnerA Name="OutputSrc" Prefix="TIPC^Depal2^Depal2 Instance" Type="2">
+		<OwnerB Name="TIID^Depal 2 I/O^Term 1 (EK1200)^Box 4 (BK1250)">
+			<Link VarA=".oBrake_Carriage" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 30 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oBrake_Hoist" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 30 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oCarriage_Forward" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 25 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oCarriage_Reverse" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 25 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oCarriage_Slow" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 21 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oChainHoist_Down" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 24 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oChainHoist_Up" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 24 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oChainHoist_Up_Slow" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 32 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oChainberChainRev" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 32 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oDischarge1_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 28 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oDischarge2_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 29 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oElevator_Infeed" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 26 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oHoistDoors_Close" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 13 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oHoistDoors_Open" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 13 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oHoist_Shrouds_Close" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 12 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oHoist_Shrouds_Open" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 12 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oIndicator_Green" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 22 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oIndicator_Red" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 23 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oIndicator_Yellow" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 22 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oInfeed1Rev" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 29 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oInfeed2Rev" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 33 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oLayer_Capture" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 14 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oLayer_Release" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 14 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oPalletDischarge_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 26 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oPalletInfeed1_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 27 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oPalletInfeed2_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 27 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oSweepGate_Close" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 9 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oSweepGate_Open" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 9 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oSweepgate_Engage" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 15 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oSweepgate_Release" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 15 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTableTop_Run" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 23 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTierSheetGripper_Engage" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 16 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTierSheetGripper_Release" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 16 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTierSheet_Bin_Close" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 17 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTierSheet_Bin_Open" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 17 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTierSheet_Car_Brake" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 28 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTierSheet_Car_Fwd" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 31 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTierSheet_Car_Rev" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 31 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTiersheetRemover_Down" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 10 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTiersheetRemover_Up" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 10 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Bin_Close" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 18 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Bin_Open" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 18 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Remover_Clamps_Engage" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 20 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Remover_Clamps_Release" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 20 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Remover_Lock" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 19 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Remover_Unlock" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 19 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTopFrame_Seize" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 11 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oTrolleySlowdown" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 33 (KL2612)^Channel 2^Output" Size="1"/>
+			<Link VarA=".oVacuum_Engage" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 21 (KL2612)^Channel 1^Output" Size="1"/>
+			<Link VarA=".oVacuum_Solenoid" GrpA="Standard Outputs" TypeA="BOOL" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Term 11 (KL2612)^Channel 1^Output" Size="1"/>
+		</OwnerB>
+	</OwnerA>
+</VarLinks>
