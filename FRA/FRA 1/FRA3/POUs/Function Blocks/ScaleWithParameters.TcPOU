@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="ScaleWithParameters" Id="{8c0bba9b-cd52-4c22-a3e4-53bf6ef5034f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION ScaleWithParameters : REAL
+VAR_INPUT
+	IN : REAL;
+	InputMin : INT;
+	InputMax : INT;
+	OutputMin : REAL;
+	OutputMax : REAL;
+END_VAR
+VAR
+	InputSpan : INT;
+	InputPercent : REAL;
+	OutputSpan : REAL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[InputSpan := InputMax - InputMin;
+
+(* Prevent divide by zero *)
+IF InputSpan=0 THEN
+	InputSpan:=1;
+END_IF
+
+OutputSpan := OutputMax - OutputMin;
+
+InputPercent := (IN - InputMin) / INT_TO_REAL (InputSpan);
+
+ScaleWithParameters := InputPercent * OutputSpan + OutputMin;]]></ST>
+    </Implementation>
+    <LineIds Name="ScaleWithParameters">
+      <LineId Id="13" Count="11" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

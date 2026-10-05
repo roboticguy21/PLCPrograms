@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="GVAR_Control" Id="{ec350f87-33e3-4a52-9877-569cce268377}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL
+	CloserTOG: TOGGLE;
+	ElevatorTOG: TOGGLE;
+	FFAugerTOG: TOGGLE;
+	CanBeltTOG: TOGGLE;
+
+
+	Twin_AugerTOG: TOGGLE;
+	Pre_BrineTOG: TOGGLE;
+	Diverter_Tog: TOGGLE;
+	JuicerTOG: TOGGLE;
+	EmptyCanTrackTOG: TOGGLE;
+	EnglerFillerTOG: TOGGLE;
+	EmptyCanTOG: TOGGLE;
+	Fill_Pulse: TP;
+	Spice_Tank_ValveTOG: TOGGLE;
+	Spice_Tank_Valve_Light: BOOL;
+	Auger_Fwd_Momentum_Safety: TOF;
+	FFAugerRevTOG: TOGGLE;
+	Auger_Rev_Momentum_Safety: TOF;
+	Twin_AugerRevTOG: TOGGLE;
+	TwinAuger_Fwd_Momentum_Safety: TOF;
+	TwinAuger_Rev_Momentum_Safety: TOF;
+
+	Full_CanBelt_Delay: TON;
+	CloserJamTMR: TON;
+	Jam_Alarm_Maintain: TOF;
+
+	CloserJam2TMR: TON;
+	PreBrine_Maintain: TOF;
+	CloserJam3TMR: TON;
+	Brine_PID: FB_BasicPID;
+	Reset_Spice_PID: BOOL;
+	Steam_Enable_TOG: TOGGLE;
+	Low_Lvl_Juicer_Alarm_TMR: TON;
+	Solbern_Maintain_During_Low_Spice: TON;
+	RefillJuicer: TOGGLE;
+	JuicerLowLevelDelay: TON;
+	No_Cans_Delay: TON;
+	No_Empty_Cans_Pause: BOOL;
+	Water_Valve_Enable_Tog: TOGGLE;
+	Spice_Valve_Enable_Tog: TOGGLE;
+	CleanModeTOG: TOGGLE;
+	Hopper_PID: FB_BasicPID;
+	Reset_Hopper_PID: BOOL;
+	Hopper_Level_SP: REAL;
+	Infeed_Auger_Speed: REAL;
+	High_Level_Delay_TMR: TON;
+	Infeed_Slow_Delay: TON;
+	Infeed_Resume_Delay: TON;
+	Brine_Temp_OOR_TMR: TON;
+	Water_Delay_OFF: TOF;
+	Spice_Delay_OFF: TOF;
+	Closer_Steam_Low_Disable_Delay: TON;
+	CloserSteamControl_Tog: TOGGLE;
+	Hopper_High_Delay: TON;
+	Hopper_High_Mtain: TOF;
+	HHM: TIME;
+	Infeed_Low_Speed: BOOL;
+
+	Hopper_Low_LevelTMR: TON;
+	HopperLow_TT: TIME;
+	Hop_Low_Lvl_DebounceTMR: TOF;
+	Filler3_Sys_Running: BOOL;
+	StopTwinAuger: BOOL;
+	AugerStopTMR: TON;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

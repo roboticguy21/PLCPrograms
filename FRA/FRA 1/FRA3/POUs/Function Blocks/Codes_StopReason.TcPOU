@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Codes_StopReason" Id="{b668e012-512e-40ed-91d5-bae83592be95}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Codes_StopReason
+VAR_INPUT
+	EN: BOOL;
+	StopButton_Num : INT;       
+END_VAR
+VAR_OUTPUT
+	ENO: BOOL;
+	Code_Valid: BOOL;
+	Code_StopReason : STRING;  
+	
+	
+END_VAR
+VAR
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT EN THEN
+    ENO := FALSE;
+    Code_StopReason := '';
+    Code_Valid := FALSE;
+    RETURN;
+END_IF
+
+ENO := TRUE;
+
+CASE StopButton_Num OF
+    10: Code_StopReason := 'MNT_C01';
+    20: Code_StopReason := 'MNT_G01';
+    30: Code_StopReason := 'MSP_C01';
+    40: Code_StopReason := 'MSP_P01';
+    50: Code_StopReason := 'QLT_Q01';
+    60: Code_StopReason := 'TEC_E0M';
+	70: Code_StopReason := 'MSP_F01';
+ELSE
+    Code_StopReason := '';
+END_CASE;
+
+Code_Valid := (Code_StopReason <> '');]]></ST>
+    </Implementation>
+    <LineIds Name="Codes_StopReason">
+      <LineId Id="85" Count="15" />
+      <LineId Id="120" Count="0" />
+      <LineId Id="101" Count="3" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

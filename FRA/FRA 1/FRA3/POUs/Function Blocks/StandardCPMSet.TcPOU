@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="StandardCPMSet" Id="{ca148d5b-a8c3-4005-98a7-c13cab7464cd}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK StandardCPMSet
+VAR_INPUT
+	ProductCode : STRING;
+
+END_VAR
+VAR_OUTPUT
+	StandardCPM: REAL;
+
+END_VAR
+VAR
+
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF ProductCode='2BEBACBBB - 300 Brite Blackeye w/Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2BEBBB - 300 Brite Blackeye Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2BEBACBBB - 300 Brite Trappeys Blkeye/Jalapeno/Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2BKBBB - 300 Brite Black Beans Salt/Water'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2BKFBBB - 300 Brite Black Beans Fully Seas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2BPBBB - 300 Brite Butter Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2CBBBB - 300 Brite Spiced Chili Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2CPBMFBBB - 300 Brite Cajun Pinto Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2CRBBB - 300 Brite Crowder Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2FPBACBBB - 300 Brite Trappey FP W/ Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2FPBBB - 300 Brite Field Peas CR'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2FPSBACBBB - 300 Brite Trappey FP W/ Bacon & Snaps'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2FPSBBB - 300 Brite Field Peas/Snaps CR'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GLSBEBB - 300 Brite Glory Sen Seas Blackeyes'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSBBBBB - 300 Brite Glory Seas Butter Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSBEBBB - 300 Brite Glory Seas Blackeyes'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSFPSBB - 300 Brite Glory Seas Field Peas/Snaps CR'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSLBBBB - 300 Brite Glory Seas Lima Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSNOBBB - 300 Brite Glory Seas Northern Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSPBBBB - 300 Brite Glory Seas Pinto Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GSPBOBB - 300 Brite Glory Seas Pinto Beans/Onions'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GVBEBB - 300 Brite Great Value Blackeye Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LBBACBB - 300 Brite Trappey  Lima Bean with Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LBBBB - 300 Brite Medium Green Lima Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LGBBB - 300 Brite Large Lima Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LKBBBB - 300 Brite Light Kidney Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LSBEBBB - 300 Brite Low Sodium Blackeye Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LSBKBBB - 300 Brite Low Sod Black Beans S&W'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LSDRKGBBB - 300 Brite Low Sod Dark Kidney Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2LSGBKBBB - 300 Brite Low Sod Govt Black Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2MBNBBB - 300 Brite Mixed Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2NBACBBB - 300 Brite Trappey  Navy Bean with Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2NBBBB - 300 Brite Navy Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2NJBACBBB - 300 Brite Navy Bean/Jalapeno/Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2RSGSLBB - 300 Brite Glory Med Grn Limas Red Sodium'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2NOBBBB - 300 Brite Great Northern Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2NOSKBBB - 300 Trappeys Lt Red Kidney Bns NO Seas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2PBBACBBB - 300 Brite Trappey Pinto Beans with Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2PBBBB - 300 Brite Pinto Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2PBJBACBBB - 300 Brite Trappey Pinto w/Jalapeno/Bacon'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2PPBBB - 300 Brite Pepper N Peas CR'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2RKCHBBB - 300 Brite Red Kidney Beans with Chili'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2RSGSBEB - 300 Brite Glory Blackeye Peas Red Sodium'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2RSGSFPSB - 300 Brite Glry Red Sod FP/Snaps'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2SBEBBB - 300 Brite Seas Blackeyes'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2SFSBBB - 300 Brite Seas Fld Peas/Snaps CR'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2SLBBBB - 300 Brite Seas Medium Green Limas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2SLGBBB - 300 Brite Seas Butterbeans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2SPBBBB - 300 Brite Seas Pinto Beans'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2WABBB - 300 Brite White Acre Peas'  THEN StandardCPM:=294; END_IF
+IF ProductCode='2GLSCGBB - 300 Brite Glory Sen Seas Collard Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GLSMGBB - 300 Brite Glory Sen Seas Mixed Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GLSTGBB - 300 Brite Glory Sen Seas Turnips'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GSTCGBB - 300 Brite Glory Seas Smk Turkey Collards'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GSTMGBB - 300 Brite Glory Turkey Mixed Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GSTTGBB - 300 Brite Glory Seas Smk Turkey Turnips'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GVCGBB - 300 Brite Great Value Collard Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2GVTGBB - 300 Brite GV Turnip Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NCGBBB - 300 Brite No-Salt Collard Greens Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NKABBB - 300 Brite No Salt Kale Greens Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NMGBBB - 300 Brite No-Salt Mixed Greens Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NMUBBB - 300 Brite No-Salt Mustard Greens Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NTGBBB - 300 Brite No-Salt Turnip Greens Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2NTWBBB - 300 Brite No-Salt Turnip/Roots Chopped'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2RSGSCGB - 300 Brite Glory Red Sodium Collard Grns'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2RSGSMGB - 300 Brite Glory Mixed Greens Red Sodium'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2RSGSTGB - 300 Brite Glory Red Sodium Turnip Grns'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2SCGBBB - 300 Brite Seas Collard Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2SMGBBB - 300 Brite Seas Mixed Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2SMUBBB - 300 Brite Seas Mustard Greens'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2STGBBB - 300 Brite Seas Turnips'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2STWBBB - 300 Brite Seas Turnip/Roots'  THEN StandardCPM:=172; END_IF
+IF ProductCode='2BNDMBBB - 300 Brite Allens Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2BNSOBBB - 300 Shell Out Green Beans w-Pintos'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2FLNBNBBB - 300 Brite Freshlike NSA Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2GLSBNBB - 300 Brite Glory Sen Seas Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2GSBNBBB - 300 Brite Glory Seasoned Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2ITBBBB - 300 Brite Italian Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2ITBSOBBB - 300 Brite Shell Out Italian Beans w-Pint'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2LSBNBBB - 300 Brite Low Sodium Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2RSGSBNB - 300 Brite Glory Red Sodium Seas Grn Bean'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2SITBBB - 300 Brite Seasoned Italian Green Beans'  THEN StandardCPM:=130; END_IF
+IF ProductCode='2HOMCWBBB - 300 Brite White Cracked Hominy'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2HOMGBBB - 300 Brite Golden Hominy'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2HOMGEZOB - 300 Brite Golden Hominy-EZO'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2HOMWBBB - 300 Brite White Hominy'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2HOMWEZOB - 300 Brite White Hominy-EZO'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2LSHOMWBB - 300 Brite LS White Hominy'  THEN StandardCPM:=240; END_IF
+IF ProductCode='2BCORBBB - 300 Brite Buttered Corn'  THEN StandardCPM:=155; END_IF
+IF ProductCode='2BSUCBBB - 300 Brite Double Succotash'  THEN StandardCPM:=155; END_IF
+IF ProductCode='2BUFPNBBB - 300 Brite Buffalo Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2CPNBBB - 300 Brite Cajun Boiled Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2DLPNBBB - 300 Brite Dill Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2HOTPNBBB - 300 Brite Hot Sauce Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2JALPNBBB - 300 Brite Jalapeno Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2PNBBB - 300 Brite Boiled Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2SPDLPNBBB - 300 Brite Spicy Dill Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2SVPNBB - 300 Brite Salt/Vinegar Boiled Peanuts'  THEN StandardCPM:=180; END_IF
+IF ProductCode='2GLSTOBB - 300 Brite Glory Sen Seas Tom & Okra'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2GLSTOCB - 300 Brite Glory Sen Seas Tom/Okra/ Corn'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2HJBBB - 300 Brite Hoppin John'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2RSTOBB - 300 Brite Glory Red Sodium Tom & Okra'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2RSTOCBB - 300 Brite Glory Red SodiumTom/Okra/ Corn'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2SUCBBB - 300 Brite Succotash/Triple'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2TOBBB - 300 Brite Tomatoes/Okra'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2TOCBBB - 300 Brite Tomatoes/Okra/Corn'  THEN StandardCPM:=260; END_IF
+IF ProductCode='2COGUMBB - 300 Brite Creole Okra Gumbo'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2LSVAMVBBB - 300 Brite Low Sodium Mixed Vegetables'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2LSVAMVGBBB - 300 Brite Low Sodium Veg All - All DC'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2NVAMVBBB - 300 Brite Veg-All Mixed Vegetables NSA'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2OKBBB - 300 Brite Cut Okra'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2RSCOGUMB - 300 Brite Creole Okra Gumbo Red Sodium'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2VAMVBBB - 300 Brite Veg-All Mixed Vegetables'  THEN StandardCPM:=160; END_IF
+IF ProductCode='2LSSIBBB - 300 Brite Spinach LS Cut Leaf ¾" x ¾"'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2LSSIGBB - 300 Brite Low Sodium Spinach-G-NA'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2NSIBBB - 300 Brite Spinach NSA Cut Leaf ¾" x ¾"'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2SIBBB - 300 Brite Spinach Cut Leaf 3/4" x 3/4"'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2SICHBBB - 300 Brite Spinach Chopped ½" x ½"'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2SIPTBB - 300 Brite Spinach - EZO'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2RSGSIB - 300 Glory Spinach Reduced Sodium'  THEN StandardCPM:=145; END_IF
+IF ProductCode='2YCANDBB - 300 Brite Candied Yams'  THEN StandardCPM:=120; END_IF
+IF ProductCode='2YCUTBBB - 300 Brite Cut Yams'  THEN StandardCPM:=120; END_IF
+IF ProductCode='2YCUTELSBBB - 300 Brite Extra Light Syrup Cut Yams'  THEN StandardCPM:=120; END_IF
+IF ProductCode='2YCUTELSC1BBB - 300 Brite Extra Light Syrup Yams-3PC'  THEN StandardCPM:=120; END_IF
+IF ProductCode='2YOPBBB - 300 Brite Yams in Orange/Pineapple Sauce'  THEN StandardCPM:=120; END_IF
+IF ProductCode='2SQBBB - 300 Brite Yellow Squash Cut'  THEN StandardCPM:=140; END_IF
+IF ProductCode='2SQOBBB - 300 Brite Squash & Onions'  THEN StandardCPM:=140; END_IF
+IF ProductCode='2GSCABBB - 300 Brite Glory Country Style Cabbage'  THEN StandardCPM:=195; END_IF
+IF ProductCode='2SCABBB - 300 Brite Seas Cabbage'  THEN StandardCPM:=195; END_IF
+IF ProductCode='2GSCORBBB - 300 Brite Glory Skillet Corn'  THEN StandardCPM:=128; END_IF
+IF ProductCode='2RSGSCORB - 300 Brite Glry Skillet Reduce SodiumCorn'  THEN StandardCPM:=128; END_IF
+IF ProductCode='4HOMGBBB - 2.5 Brite Golden Hominy'  THEN StandardCPM:=128; END_IF
+IF ProductCode='4HOMWBBB - 2.5 Brite White Hominy'  THEN StandardCPM:=128; END_IF
+IF ProductCode='2GFABBB - 300 Brite Glory Fried Apples'  THEN StandardCPM:=164; END_IF
+IF ProductCode='2MHFABBB - 300 Brite MH Fried Apples'  THEN StandardCPM:=164; END_IF
+IF ProductCode='2RSGHCARB - 300 Brite Glory Honey Carrots Red Sodium'  THEN StandardCPM:=206; END_IF
+IF ProductCode='2RUTBBB - 300 Brite Rutabagas'  THEN StandardCPM:=206; END_IF
+IF ProductCode='2GHCARBB - 300 Brite Glory Honey Carrots'  THEN StandardCPM:=206; END_IF
+IF ProductCode='2GSBERBB - 300 Brite Glory Seas Blackeyes & Rice'  THEN StandardCPM:=244; END_IF
+IF ProductCode='2GSRBRBB - 300 Brite Glory Seas Red Beans/Rice'  THEN StandardCPM:=244; END_IF
+IF ProductCode='2RBRBBB - 300 Brite Red Beans/Rice'  THEN StandardCPM:=244; END_IF
+IF ProductCode='40BNBBB - 40oz Brite Blue Lake Green Beans'  THEN StandardCPM:=80; END_IF
+IF ProductCode='40BNPBBB - 40oz Brite Blue Lake Green Bean/Potatoes'  THEN StandardCPM:=80; END_IF
+IF ProductCode='40ITBBBB - 38oz Brite Italian Green Beans'  THEN StandardCPM:=80; END_IF
+IF ProductCode='40SBNBBB - 40oz Brite Blue Lake Seas Green Beans'  THEN StandardCPM:=80; END_IF
+IF ProductCode='40YCTELSBBB - 40oz Brite Extra Light Syrup Cut Yams'  THEN StandardCPM:=110; END_IF
+IF ProductCode='40YCTSFBB - 40oz Bruce Yams Sugar Free'  THEN StandardCPM:=110; END_IF
+IF ProductCode='40YMPBBB - 40 oz Brite Princella Cut Sweet Pot NSA'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4ALSITBBB - 2.5 Brite Allens Seas Ital Beans'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4BNBBB - 2.5 Brite Cut Green Beans'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4GSBNBBB - 2.5 Brite Glory Seas Green Beans'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4GSBNPBB - 2.5 Brite Glory Seas Green Bns/Potatoes'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4ITBBB - 2.5 Brite Italian Green Beans'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4SITBBB - 2.5 Brite Seas Ital Grn Bns'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4YCTSFBB - 2.5 Brite Cut Yams Sugar Free'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4YCUTBBB - 2.5 Brite Cut Yams'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4YCUTELSBBB - 2.5 Brite Extra Light Syrup Cut Yams'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4YGFCANBBB - 2.5 Brite Glory Candied Yams'  THEN StandardCPM:=110; END_IF
+IF ProductCode='4BQPNBBB - 2.5 Brite Boiled Hot and Spicy Peanuts'  THEN StandardCPM:=125; END_IF
+IF ProductCode='4BUFPNBBB - 2.5 Brite Buffalo Peanuts'  THEN StandardCPM:=125; END_IF
+IF ProductCode='4DBUFPNBB - 2.5 Brite Dry Spicy Buffalo Peanuts'  THEN StandardCPM:=125; END_IF
+IF ProductCode='4DLPNBBB - 2.5 Brite Dill Peanuts'  THEN StandardCPM:=125; END_IF
+IF ProductCode='4GSCGBFB - 2.5 Brite Glory Seas FatBK Collard Green'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4GSKABFB - 2.5 Brite Glory Seas FatBK Kale Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4GSMGBFB - 2.5 Brite Glory Seas FatBK Mixed Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4GSMUBFB - 2.5 Brite Glory Seas FatBK Mustard Green'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4GSTGBFB - 2.5 Brite Glory Seas FatBK Turnip Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4GSTWBFB - 2.5 Brite Glory Seas FatBK Turnips/Roots'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4HSMVBBB - 2.5 Brite Homestyle Mixed Vegetables'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4NTGBBB - 2.5 Brite NS Turnip Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4PNBBB - 2.5 Brite Boiled Peanuts'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SCGBBB - 2.5 Brite Seas Collard Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SMGBBB - 2.5 Brite Seas Mixed Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SMUBBB - 2.5 Brite Seas Mustard Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SPDLPNBBB - 2.5 Brite Spicy Dill Peanuts'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4STGBBB - 2.5 Brite Seas Turnip Greens'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4STWBBB - 2.5 Brite Seas Turnip/Roots'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SVPNBB - 2.5 Brite Salt/Vinegar Boiled Peanuts'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4VAMVBBB - 2.5 Brite Veg-All Mixed Vegetables'  THEN StandardCPM:=124; END_IF
+IF ProductCode='4SBBOBBB - 2.5 Brite S.Butter Bean w/Vid Onions'  THEN StandardCPM:=136; END_IF
+IF ProductCode='4SBPOBBB - 2.5 Brite Seas Beans/Pot/Onion'  THEN StandardCPM:=136; END_IF
+IF ProductCode='4SFPSOBBB - 2.5 Brite S. FP&Snaps w/VidOn CR'  THEN StandardCPM:=136; END_IF
+IF ProductCode='4SPBOBBB - 2.5 Brite S. Pinto Bean w/Vid Onoions'  THEN StandardCPM:=136; END_IF
+IF ProductCode='4CPBMFBBB - 2.5 Brite Cajun Pinto Beans'  THEN StandardCPM:=131; END_IF
+IF ProductCode='4GSIBBB - 2.5 Brite Glory Seas Spinach'  THEN StandardCPM:=106; END_IF
+IF ProductCode='4SIBBB - 2.5 Brite Spinach'  THEN StandardCPM:=106; END_IF
+IF ProductCode='5ALCARDIBBB - #10 Brite Allens Diced Carrots'  THEN StandardCPM:=36; END_IF
+IF ProductCode='5CPNBBB - #10 Brite Cajun Boiled Peanuts'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5DCPNBB - #10 Brite Dry Cajun Peanuts'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5HOMGBBB - #10 Brite Golden Hominy'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5HOMWBBB - #10 Brite White Hominy'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5HOMWJAUBBB - #10 Brite Mexican Hominy Juanita'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5HOMWSNBBB - #10 Brite Seneca White Hominy'  THEN StandardCPM:=45; END_IF
+IF ProductCode='5ALCHHTBNBBB - #10 Brite Allens Chili Hot Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5BCHBBB - #10 Brite Brooks Chili Hot Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5BESBBB - #10 Brite Blackeye Peas/Snaps'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5BKFBBB - #10 Brite Black Beans Fully Seas'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5BONBBB - #10 Brite Garbanzo Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5CHBRBB - #10 Brite Chili Beans w-Red Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5CRBBB - #10 Brite Crowder Peas'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5FPBBB - #10 Brite Field Peas CR'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5FPSBBB - #10 Brite Field Peas/Snaps CR'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LGBBB - #10 Brite Large Lima Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LKBBBB - #10 Brite Light Kidney Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSBEBBB - #10 Brite Low Sodium Blackeye Peas'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSBKBBB - #10 Brite Low Sod Black Beans S&W'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSBKSCBB - #10 Brite LS Black Beans Slow Cook'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSKBBBB - #10 Brite Low Sodium Dark Kidney Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSLBBBB - #10 Brite Low Sod Medium Green Limas'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSNBBBB - #10 Low Sodium Navy Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSNOBBB - #10 Brite Low Sod Great Northern Bean'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5LSPBBBB - #10 Brite Low Sodium Pinto Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5NSLKBBBB - #10 Brite Light Red Kidney Beans No Salt'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5PBJADKBB - #10 Brite Jalapeno Pinto Beans Dickeys'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5PNBBB - #10 Brite Boiled Peanuts'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5RBBBB - #10 Brite Red Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5RSBBBB - #10 Brite Ranch Style Black Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5RSPTBBB - #10 Brite Ranch Style Pinto Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5SBEBBB - #10 Brite Seas Blackeye Peas'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5SFSBBB - #10 Brite Seas Field Peas/Snaps CR'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5SPBBBB - #10 Brite Seas Pinto Beans'  THEN StandardCPM:=41; END_IF
+IF ProductCode='5GSCGBFB - #10 Brite Glory Seas FatBK Collard Green'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5GSMGBFB - #10 Brite Glory Seas FatBK Mixed Greens'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5GSTCGBB - #10 Brite Glory Seas Turkey Collard Grns'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5NCGBBB - #10 Brite Collard Greens NSA'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5NKABBB - #10 Brite No Salt Kale Greens'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5NMGBBB - #10 Brite Mixed Greens NSA'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5NMUDMBBB - #10 Brite Allens Mustard Greens NSA'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5NTGBBB - #10 Brite Turnip Greens NSA'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5SCGBBB - #10 Brite Seas Collard Greens'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5SMIGBBB - #10 Brite Seas Mixed Greens'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5STGBBB - #10 Brite Seas Turnip Greens'  THEN StandardCPM:=29; END_IF
+IF ProductCode='5PNBDMBBB - #10 Brite Pork and Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5VCPBBB - #10 Brite Van Camps Pork & Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5VEGBKBDMBB - #10 Brite Allens Vegetarian Baked Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5VEGBNBBB - #10 Brite Allens Vegetarian Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5MEXCHBNBB - #10 Brite Mexican Chili Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5ALLSNSVEGBBB - #10 Brite Allens LS NS Veg Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5BBNHBBB - #10 Brite Hattie Bs Baked Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5BKBNBBB - #10 Brite DM Baked Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5BKBNSCBBB - #10 Brite Slow Cooked Baked Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5BQBNDKBB - #10 Brite BarB Q Beans Dickeys'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5HCPNBBB - #10 Brite Happy Chef Pork and Beans'  THEN StandardCPM:=33; END_IF
+IF ProductCode='5SQCBBB - #10 Brite Yellow Squash 1" Cut'  THEN StandardCPM:=27; END_IF
+IF ProductCode='5SQOBBB - #10 Brite Yellow Squash Cut w/Onions'  THEN StandardCPM:=27; END_IF
+IF ProductCode='5LSSIBBB - #10 Brite Spinach Chopped 1/2" x 1/2"'  THEN StandardCPM:=24; END_IF
+IF ProductCode='5NSIBBB - #10 Brite Spinach NSA Cut Leaf  ¾" x ¾"'  THEN StandardCPM:=24; END_IF
+IF ProductCode='5NTWBBB - #10 Brite Turnips with Roots NSA'  THEN StandardCPM:=24; END_IF
+IF ProductCode='5SCBBB - #10 Brite Spinach Leaf 3/4" x 3/4"'  THEN StandardCPM:=24; END_IF
+IF ProductCode='5PDIBBB - #10 Brite White Diced Potatoes'  THEN StandardCPM:=36; END_IF
+IF ProductCode='5RUTBBB - #10 Brite Diced Rutabagas'  THEN StandardCPM:=36; END_IF
+IF ProductCode='5ITBBBB - #10 Brite Italian Green Beans'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5ITSENBBB - #10 Brite MH Italian Grn Beans USF'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5YCANDBB - #10 Brite Candied Yams'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5YCT4555BB - #10 Brite Cut Yams 45/55 Count'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5YCTELBBB - #10 Extra Light Syrup Cut Yams'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5SITBDKBB - #10 Brite Sea Italian Grn Beans Dickeys'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5SITBBBB - #10 Brite Seasoned Italian Green Beans'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5ALSBNBBB - #10 Brite Allens Seas Cut Green Beans'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5ALSITBBB - #10 Brite Allens Seas Ital Green Beans'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5BNBBB - #10 Brite Green Beans Cut'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5BNCBBBB - #10 Brite Cracker Barrel Green Beans Cut'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5SBNBBB - #10 Brite Seasoned Cut Green Beans'  THEN StandardCPM:=30; END_IF
+IF ProductCode='5VAMVBBB - #10 Brite Veg-All Mixed Vegetables'  THEN StandardCPM:=38; END_IF
+IF ProductCode='5YMASBBB - #10 Brite Mashed Yams'  THEN StandardCPM:=14; END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="StandardCPMSet">
+      <LineId Id="12" Count="264" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

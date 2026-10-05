@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="CounterEx" Id="{137a8a5f-ffb7-4420-bef5-fba818550c99}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK CounterEx
+VAR_INPUT
+
+                 CU : BOOL;
+
+                PV: INT;
+
+                ForcedCV : INT;
+
+                RESET : BOOL;
+					
+				
+
+END_VAR
+VAR_OUTPUT
+
+                Q : BOOL;
+
+                CV : INT;
+
+END_VAR
+VAR
+
+                RisingEdge : BOOL;
+
+                LastForcedCV : INT;
+
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF (CU) AND (NOT RisingEdge) THEN
+
+                IF (CV<2147483646) THEN
+
+                                CV:=CV+1;
+
+                END_IF
+
+END_IF
+
+RisingEdge:=CU;
+
+ 
+
+IF (LastForcedCV<>ForcedCV) THEN
+
+                CV:=ForcedCV;
+
+                LastForcedCV:=ForcedCV;
+
+END_IF
+
+ 
+
+IF (RESET) THEN
+
+                CV:=0;
+
+END_IF
+
+ 
+
+Q:=(CV>=PV);
+]]></ST>
+    </Implementation>
+    <LineIds Name="CounterEx">
+      <LineId Id="181" Count="31" />
+      <LineId Id="100" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

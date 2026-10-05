@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="FillerCPM_Current" Id="{d39bcf92-5f78-4c9b-89a7-e98574a1fb4a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FillerCPM_Current
+VAR_INPUT
+	Filler_PulseInput : BOOL;
+END_VAR
+VAR_OUTPUT
+	Current_Can_Pulses : REAL;
+    CPM_Reading : REAL;
+END_VAR
+VAR
+	fb_RisingEdge : R_TRIG;
+    fb_MinuteTimer : TON;
+    udiCurrentPulseCount : REAL := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Rising edge detection for pulse input
+    fb_RisingEdge(CLK := Filler_PulseInput);
+	IF fb_RisingEdge.Q THEN
+        udiCurrentPulseCount := udiCurrentPulseCount + 1;
+    END_IF
+	// Minute timer
+    fb_MinuteTimer(IN := TRUE, PT := T#20S); // Start timer automatically
+
+    // When the minute timer expires
+    IF fb_MinuteTimer.Q THEN
+		
+        // Store the current count as the last minute's count
+        CPM_Reading := (udiCurrentPulseCount*3 * 0.75);
+        // Reset the current pulse count for the new minute
+        udiCurrentPulseCount := 0;
+        // Reset the timer to start counting for the next minute
+        fb_MinuteTimer(IN := FALSE); // Reset timer
+        fb_MinuteTimer(IN := TRUE, PT := T#20S);//Restart timer
+    END_IF
+
+    // Output the current minute's pulse count
+    Current_Can_Pulses := udiCurrentPulseCount;]]></ST>
+    </Implementation>
+    <LineIds Name="FillerCPM_Current">
+      <LineId Id="16" Count="0" />
+      <LineId Id="36" Count="8" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="45" Count="9" />
+      <LineId Id="20" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

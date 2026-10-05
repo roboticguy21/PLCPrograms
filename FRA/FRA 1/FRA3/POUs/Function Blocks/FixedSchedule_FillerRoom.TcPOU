@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="FixedSchedule_FillerRoom" Id="{ae2c60b3-652d-4349-a466-bb31f628698b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FixedSchedule_FillerRoom
+VAR_INPUT
+	FillerRoom: STRING;
+END_VAR
+
+VAR_OUTPUT
+	Scheduled_FixedHours: BOOL;
+END_VAR
+	
+VAR
+	total_minutes: INT;
+	fbTime : FB_LocalSystemTime;
+    stTime : TIMESTRUCT;
+	Current_Hours: WORD; 
+	Current_Minutes: WORD;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Current time
+fbTime(
+    sNetID := '',
+    bEnable := TRUE,
+    dwCycle := 1000
+);
+
+stTime := fbTime.systemTime;
+Current_Hours :=  stTime.wHour;
+Current_Minutes := stTime.wMinute;
+
+
+total_minutes := (WORD_TO_INT(Current_Hours) * 60) +
+                  WORD_TO_INT(Current_Minutes);
+
+// Shift per Filler Room
+IF FillerRoom = 'FRA' OR FillerRoom = 'FRD'THEN
+	Scheduled_FixedHours:= NOT((total_minutes>=120)AND(total_minutes<360)); //02:00am to 05:59 //(add 20 min after 2:00am just in case)
+ELSIF  FillerRoom = 'FRC' THEN
+	Scheduled_FixedHours:= NOT((total_minutes>=150)AND(total_minutes<390)); //02:30am to 06:29 //(add 20 min after 2:30am just in case)
+ELSE
+	Scheduled_FixedHours:= FALSE;
+END_IF;
+
+
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FixedSchedule_FillerRoom">
+      <LineId Id="60" Count="0" />
+      <LineId Id="103" Count="4" />
+      <LineId Id="78" Count="1" />
+      <LineId Id="85" Count="0" />
+      <LineId Id="82" Count="0" />
+      <LineId Id="62" Count="1" />
+      <LineId Id="84" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="28" Count="1" />
+      <LineId Id="33" Count="1" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="41" Count="1" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="21" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

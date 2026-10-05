@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="TOGGLE" Id="{df950bd4-4220-41ab-8fac-7cc6b1da6524}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK TOGGLE
+VAR_INPUT
+	IN : BOOL;
+	RESET : BOOL;
+END_VAR
+VAR_OUTPUT
+	Q : BOOL;
+END_VAR
+VAR
+	edge : BOOL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* This function block toggle the state of the output (Q) when the input (IN)
+	transitions from a FALSE to TRUE.
+	If the reset input (RESET) is true, then the output is always false *)
+IF RESET THEN
+	Q:=0;
+ELSIF IN AND NOT edge THEN
+	Q:=NOT Q;
+END_IF;
+edge:=IN;]]></ST>
+    </Implementation>
+    <LineIds Name="TOGGLE">
+      <LineId Id="11" Count="8" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

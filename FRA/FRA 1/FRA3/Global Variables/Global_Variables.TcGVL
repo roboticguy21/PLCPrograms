@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="Global_Variables" Id="{d580257c-71c6-4d15-a480-0a31ba33c078}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL 
+(*****Fill Room A-2****)
+
+(****Slot 1 KL-3052****)
+	iHopper_Level AT %I* : WORD;
+	i004 AT %I* : WORD;
+
+(****Slot 2 KL-1114****)
+	F_Elevator AT %I* : BOOL;
+	F_Closer AT %I* : BOOL;
+	F_Full_Can_Belt AT %I* : BOOL;
+	F_Juicer AT %I* : BOOL;
+
+(****Slot 3 KL-1114****)
+	F_Engler_Filler AT %I* : BOOL;
+	F_Twin_Auger AT %I* : BOOL;
+	F_Empty_Can_Track AT %I* : BOOL;
+	F_Empty_Can_Conv AT %I* : BOOL;
+
+(****Slot 4 KL-1114****)
+	iSpice_Tank_Level AT %I* : BOOL;
+	iCloser_Start_PB AT %I* : BOOL;
+	iElevator_Start_PB AT %I* : BOOL;
+	iEmpty_Can_Sensor AT %I* : BOOL;
+
+(****Slot 5 KL-1114****)
+	iCloser_Can_Jam AT %I* : BOOL;
+	F_Exit_Conveyor AT %I* : BOOL;
+	F_Infeed_Auger AT %I* : BOOL;
+	i403 AT %I* : BOOL;
+
+(****Slot 6 KL-1114****)
+	iElevator_Jam_Sensor AT %I* : BOOL;
+	iDischarge_Can_Jam AT %I* : BOOL;
+	iPreBrine_Tank_Level AT %I* : BOOL;
+	iSteamPressSwitch AT %I* : BOOL;
+
+(****Slot 7 KL-1114****)
+	iSpiral_Can_Counter AT %I* : BOOL;
+	i601 AT %I* : BOOL;
+	i602 AT %I* : BOOL;
+	iCloser_Speed_Pulse AT %I* : BOOL;
+
+(****Slot 8 KL-4022****)
+	oSpice_Pump_Speed AT %Q* : WORD;
+	oCloser_Speed AT %Q* : WORD;
+
+(****Slot 9 KL-4022****)
+	oElevator_Speed AT %Q* : WORD;
+	oFull_Can_Belt_Speed AT %Q* : WORD;
+
+(****Slot 10 KL-4022****)
+	oEngler_Filler_Speed AT %Q* : WORD;
+	oTwin_Auger_Speed AT %Q* : WORD;
+
+(****Slot 11 KL-4022****)
+	oExit_Conv_Speed AT %Q* : WORD;
+	oEmpty_Can_Track_Spd AT %Q* : WORD;
+
+(****Slot 12 KL-4022****)
+	oEmpty_Can_Conv_Spd AT %Q* : WORD;
+	oInfeed_Auger AT %Q* : WORD;
+
+(****Slot 13 KL-4022****)
+	oSpiral_Infeed_Spd AT %Q* : WORD;
+	oBrine_Tank_Steam AT %Q* : WORD;
+	
+(****Slot 15 KL-3052****)
+	iTwinAugerLVL AT %I* : WORD;
+	iSpare AT %I* : WORD;
+	
+(****Slot 14 KL-3202****)
+	iSpice_Tank_Temp AT %I* : WORD;
+	i1062 AT %I* : WORD;
+
+
+
+(****Slot 16 KL-9260****)
+	iEmergency_Stop AT %I* : BOOL;
+	iPower AT %I* : BOOL;
+
+(****Slot 17 KL-2602****)
+	oReturn_Pump AT %Q* : BOOL;
+	oPreBrine_Flap AT %Q* : BOOL;
+
+(****Slot 18 KL-2602****)
+	oPre_Brine AT %Q* : BOOL;
+	oWater_Valve AT %Q* : BOOL;
+
+(****Slot 19 KL-2602****)
+	oCloser_Clutch_Sol AT %Q* : BOOL;
+	oBrine_Flap AT %Q* : BOOL;
+
+(****Slot 20 KL-2612****)
+	oSpiral_Infeed AT %Q* : BOOL;
+	o1801 AT %Q* : BOOL;
+
+(****Slot 21 KL-2612****)
+	oSpiral AT %Q* : BOOL;
+	oCloser AT %Q* : BOOL;
+
+(****Slot 22 KL-2612****)
+	oFull_Can_Belt AT %Q* : BOOL;
+	oJuicer AT %Q* : BOOL;
+
+(****Slot 23 KL-2612****)
+	oEngler_Filler AT %Q* : BOOL;
+	oTwin_Auger_Forward AT %Q* : BOOL;
+
+(****Slot 24 KL-2612****)
+	oTwin_Auger_Reverse AT %Q* : BOOL;
+	oOutfeed_Can_Belt AT %Q* : BOOL;
+
+(****Slot 25 KL-2612****)
+	oEmpty_Can_Track AT %Q* : BOOL;
+	oEmpty_Can_Conv AT %Q* : BOOL;
+
+(****Slot 26 KL-2612****)
+	oInfeed_Auger_Fwd AT %Q* : BOOL;
+	oInfeed_Auger_Rev AT %Q* : BOOL;
+
+(****Slot 27 KL-2612****)
+	oStatusLt AT %Q* : BOOL;
+	oCloser_ButtonLt AT %Q* : BOOL;
+
+(****Slot 28 KL-2612****)
+	oSpiral_ButtonLt AT %Q* : BOOL;
+	oPreBrine_Overflow_Pump AT %Q* : BOOL;
+
+	Low_Spice_Alarm: BOOL;
+	Low_Spice_Disable: BOOL;
+	CleanMode: BOOL;
+	Hopper_Level_PCT: REAL;
+	TYLER: BOOL;
+	Hopper_Level_High: BOOL;
+	Brine_Temp_High: BOOL;
+	Brine_Temp_Low: BOOL;
+	Brine_Temp_Out_Of_Range: BOOL;
+	Closer_Steam_Low_Disable: BOOL;
+	CanCounter3: CTU;
+	CC3Multiplier: CTU;
+	DowntimeTotal_Min: REAL;
+	EndRuntime: BOOL;
+	AutoTog: TOGGLE;
+	FillerPauseTog: TOGGLE;
+	FillerAugerPause: TOGGLE;
+	Empty_Can_Tog: TOGGLE;
+	CC3Reset: BOOL;
+	CanCntReset: BOOL;
+	Count3: WORD;
+    Runtime_Stopped: BOOL;
+	Count3Real: REAL;
+	MultiReal: REAL;
+	HighCount: REAL;
+	ActualCount: REAL;
+	Cases: REAL;
+    MultiWord: WORD ;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

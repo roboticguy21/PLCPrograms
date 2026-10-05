@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Messages" Id="{8f17c4eb-847a-47d1-96cf-7dab48369e9c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Messages
+VAR
+
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[sMessages:='No Messages';
+
+IF Jam_Fault THEN
+sMessages:='Closer Area Jam!';
+END_IF
+
+IF NOT iEmergency_Stop THEN
+sMessages:='Emergency Stop!';
+END_IF
+
+IF Low_Spice_Alarm THEN
+	sMessages:='Low Level detected in SPICE TANK!!! ';
+END_IF
+
+IF Low_Spice_Disable THEN
+	sMessages:='Line Paused....Low Level detected in SPICE TANK!!! ';
+END_IF
+
+IF Global_Variables_HMI.HopperLevel_IS_HIGH THEN
+	sMessages:='High Level in Surge Hopper.....Infeed Auger Paused!!! ';
+END_IF
+
+IF Brine_Temp_Out_Of_Range THEN
+	sMessages:='Brine Temp Out of Range!!!' ;
+END_IF
+
+IF Closer_Steam_Low_Disable THEN
+	sMessages:='Line Paused Due To Low Steam at Closer!';
+END_IF
+
+IF Global_Variables_HMI.HopperLevelIS_LOW THEN
+	sMessages:='Low Level in Surge Hopper.....Infeed Auger Paused!!! ';
+END_IF
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="Messages">
+      <LineId Id="4" Count="34" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

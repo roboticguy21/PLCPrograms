@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="LimitRealNumberToWord" Id="{314fa535-00f5-4ae5-9768-9d048427f829}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION LimitRealNumberToWord : INT
+VAR_INPUT
+	IN : REAL;
+	LowLimit : REAL;
+	HighLimit : REAL;
+END_VAR
+VAR
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[LimitRealNumberToWord:=REAL_TO_WORD(LimitRealNumber(IN,LowLimit,HighLimit));]]></ST>
+    </Implementation>
+    <LineIds Name="LimitRealNumberToWord">
+      <LineId Id="8" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

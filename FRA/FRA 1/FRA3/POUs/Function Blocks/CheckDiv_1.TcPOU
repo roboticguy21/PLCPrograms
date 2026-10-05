@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="CheckDiv_1" Id="{7d8b4676-35af-426c-88cd-e649acb1fe46}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK CheckDiv_1
+VAR_INPUT
+    divisor : REAL;
+END_VAR
+VAR_OUTPUT
+	Divide_Valid:BOOL;
+	DivisorValue:REAL;
+	
+END_VAR
+VAR
+	CheckDivReal: REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF divisor = 0 THEN
+    DivisorValue := 1;
+	
+ELSE
+	DivisorValue := divisor;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="CheckDiv_1">
+      <LineId Id="13" Count="1" />
+      <LineId Id="21" Count="2" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

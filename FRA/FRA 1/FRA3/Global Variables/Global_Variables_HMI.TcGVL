@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="Global_Variables_HMI" Id="{855bc762-f9f0-4281-9c12-d0b95d9713c1}">
+    <Declaration><![CDATA[{attribute 'Tc2GvlVarNames'}
+VAR_GLOBAL
+
+	s3ProdStd:REAL;
+
+(*Speed Set Points*)
+	sSpice_Pump_Speed_SPt: REAL;
+	sCloser_Speed_SPt: REAL;
+	sElevator_Speed_SPt: REAL;
+	sFull_Can_Belt_Speed_SPt: REAL;
+	sEngler_Filler_Speed_SPt: REAL;
+	sTwin_Auger_Speed_SPt: REAL;
+	sExit_Conveyor_Speed_SPt: REAL;
+	Empty_Can_Track_SPt: REAL;
+	Empty_Can_Conv_SPt: REAL;
+	sInfeed_Auger_SPt: REAL;
+
+(****Screen Activation****)
+
+	sAuto: BOOL;
+	sAuto_Run:BOOL;
+	sAuto_Button : BOOL;
+	sFiller_Pause_Button : BOOL;
+	sFiller_Pause : BOOL;
+	sFeed_Auger_Pause_Button : BOOL;
+	sFeed_Auger_Pause : BOOL;
+	sEmpty_Can_Track : BOOL;
+
+	sFeed_Auger_Fwd : BOOL;
+	sFeed_Auger_Rev : BOOL;
+	sTwin_Auger_Fwd : BOOL;
+	sTwin_Auger_Rev : BOOL;
+
+	oInfeed_Auger_Fwd_Light: BOOL;
+	oInfeed_Auger_Rev_Light: BOOL;
+	oTwin_Auger_Forward_Light: BOOL;
+	oTwin_Auger_Reverse_Light: BOOL;
+	Jam_Fault: BOOL;
+	sEngler_Filler : BOOL;
+	sPreBrine : BOOL;
+	sSpice_Tank_Fill : BOOL;
+	sConveyors : BOOL;
+	sJuicer : BOOL;
+	sDiverter : BOOL;
+	sEmpty_Can_Track_300A: BOOL;
+	sCloser: BOOL;
+	sFull_Can_Belt: BOOL;
+	sPre_Brine: BOOL;
+	sSpice_Diverter: BOOL;
+	sCloser_Current: REAL;
+	sEmpty_Can_Conv: BOOL;
+	Auto_Run: BOOL;
+
+
+
+	sMessages: STRING;
+	Spice_Tank_Temp_F: REAL;
+	sEmpty_Can_Track_Light : BOOL;
+
+	sManualFillJuicerButton: BOOL;
+	sManualFillJuicerButton_Light: BOOL;
+
+	sSteam_Enable: BOOL;
+	sSteam_Enable_Lt: BOOL;
+
+	sSpice_Temp_SetPoint: REAL;
+	sBrineTempF: REAL;
+	sBrine_Tank_Steam: REAL;
+
+	sWater_Valve_enable : BOOL;
+	sSpice_Valve_enable : BOOL;
+	sSpice_Valve_enable_Lt: BOOL;
+	sWater_Valve_enable_Lt: BOOL;
+
+	sCleanMode: BOOL;
+	sCleanMode_Light: BOOL;
+
+	sCloser_Steam_ON: BOOL;
+	sCloserSteamEnable: BOOL;
+	sCloserSteamEnable_Lt: BOOL;
+
+
+(**HMI Access Code Variables**)
+
+	sButton1:INT:=7390;
+	sButton2:INT:=23520;
+	sButton3:INT:=1258;
+	sButton4:INT:=1225;
+	sButton5:INT:=7680;
+	sButton6:INT:=12281;
+	sButton7:INT:=5746;
+	sButton8:INT:=15051;
+	sButton9:INT:=3341;
+	sButton10:INT:=12159;
+	sButton11:INT:=12310;
+	sButton12:INT:=11490;
+	sButton13:INT:=1522;
+	sButton14:INT:=0596;
+	sButton15:INT:=22548;
+	sButton16:INT:=15293;
+	sButton17:INT:=15108;
+	sButton18:INT:=430;
+	sButton19:INT:=2668;
+	sButton20:INT:=12396;
+	sButton21:INT:=7171;
+	sButton22:INT:=7272;
+	sButton23:INT:=7373;
+	sButton24:INT:=7474;
+
+(**************Scada Comms*********************)
+	sc3_Current_CPM:INT;
+	sc3_CPM_AVG:REAL;
+	sc3ActualCount: REAL;
+	sc3_BackupCouter_ActualCount: DINT;
+	sc3_Opt:REAL;
+	sc3_EFF: REAL;
+    CounterEx_0: CounterEx;
+    CounterEx_1: CounterEx;
+	CounterEx_2: CounterEx;
+
+    sc3CloserSpeedCPM: INT;
+
+	sc3_Running: BOOL;
+	sc3_Spiral_Drive_Fault: BOOL;
+	sc3_Elevator_Drive_Fault: BOOL;
+	sc3_Filler_Drive_Fault: BOOL;
+	sc3_Closer8Drive_Fault: BOOL;
+	sc3_Hopper_Lvl: BOOL;
+	sc3_Alarm_Reset: BOOL;
+	sc3_Auger_Fault: BOOL;
+	sc3_Spiral_Infeed_Fault: BOOL;
+	sc3_Closer_Outfeed_Fault: BOOL;
+	sc3_Spiral_Infeed_Belt_Fault: BOOL;
+	sc3_Filler_Line_Conv_Fault: BOOL;
+	sc3_Brine_Temp_Fault:BOOL;
+
+	sc3_SteamPsi_OK: BOOL;
+	sc3_AirPsi_Ok: BOOL;
+	sc3_ProdCode:STRING:='2GEBEBB - 300 Bright Peas';
+
+
+	RPT: REAL;
+	Needed_CPM: REAL;
+	sc3_CanReset: BOOL;
+	rsPlant_Air_Psi: DINT;
+	sc3Plant_Air_Psi: DINT;
+	rMeasuredSteamPsi: INT;
+	sc3Closer_Speed: INT;
+
+	Hopper_Level_Low: BOOL;
+
+	sc3_IgnitionStartProdTime: BOOL;
+
+
+	FRA3_Hopper_Level: REAL;
+	HopperLevel_IS_HIGH: BOOL;
+	HopperLevelIS_LOW: BOOL;
+	
+	(*L3: Downtime Log*)
+	sc3_FillerStops: INT;
+	sc3_StartProd_Button: BOOL;
+	sc3_EndProd_Button: BOOL;
+	sc3_ID_Downtime: INT;
+	sc3_ConfmirDT_Button: BOOL;
+	sc3_Code_DowntimeLog: STRING;
+	sc3_DowntimeLog: BOOL;
+	sc3_InProduction_Status: BOOL;
+	sc3_DowntimeView_Control: BOOL;
+	
+	(*L3: Uptime & Downtime*)
+	sc3_Downtime_SEC: DINT;
+	sc3_Uptime_SEC: DINT;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

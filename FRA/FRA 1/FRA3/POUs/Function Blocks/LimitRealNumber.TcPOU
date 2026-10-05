@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="LimitRealNumber" Id="{226f105c-14a9-4992-bdc2-3523434d8ab9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION LimitRealNumber : REAL
+VAR_INPUT
+	IN : REAL;
+	LowLimit : REAL;
+	HighLimit : REAL;
+END_VAR
+VAR
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[LimitRealNumber:= IN;
+
+IF (IN<LowLimit) THEN
+	LimitRealNumber:= LowLimit;
+END_IF
+
+IF (IN>HighLimit) THEN
+	LimitRealNumber:= HighLimit;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="LimitRealNumber">
+      <LineId Id="8" Count="8" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
